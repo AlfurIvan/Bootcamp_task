@@ -2,7 +2,7 @@ from rest_framework import generics, response
 
 from . import models
 from . import serializers
-from .services import nested_relation_updater, update_serialize_save_instance
+from .services import nested_relation_when_update, update_serialize_save_instance
 
 
 class ProfessionListCreateAPI(generics.ListCreateAPIView):
@@ -22,7 +22,7 @@ class ProfessionRetrieveUpdateDestroyAPI(generics.RetrieveUpdateDestroyAPIView):
         serializer = update_serialize_save_instance(serializers.ProfessionSerializer, instance, data=request.data)
 
         if len(skills_data) != 0:
-            list_of_relations_objects = nested_relation_updater(skills_data, models.Skill)
+            list_of_relations_objects = nested_relation_when_update(skills_data, models.Skill)
 
             instance.skills.clear()
             instance.skills.set(list_of_relations_objects)
@@ -48,7 +48,7 @@ class SkillRetrieveUpdateDestroyAPI(generics.RetrieveUpdateDestroyAPIView):
         serializer = update_serialize_save_instance(serializers.SkillSerializer, instance, data=request.data)
 
         if len(topics_data) != 0:
-            list_of_relations_objects = nested_relation_updater(topics_data, models.Topic)
+            list_of_relations_objects = nested_relation_when_update(topics_data, models.Topic)
             instance.topics.clear()
             instance.topics.set(list_of_relations_objects)
 

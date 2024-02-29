@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from .models import Profession, Skill, Topic
-from .services import fill_relations_during_creation
+from .services import nested_relation_when_create
 
 
 class SplitLinksField(serializers.Field):
@@ -38,7 +38,7 @@ class SkillSerializer(serializers.ModelSerializer):
 
         instance = Skill.objects.create(**validated_data)
         if len(topics_data):
-            topics_set = fill_relations_during_creation(topics_data, Topic)
+            topics_set = nested_relation_when_create(topics_data, Topic)
             instance.topics.set(topics_set)
 
         return instance
@@ -65,7 +65,7 @@ class ProfessionSerializer(serializers.ModelSerializer):
         instance = Profession.objects.create(**validated_data)
 
         if len(skills_data):
-            skills_set = fill_relations_during_creation(skills_data, Topic)
+            skills_set = nested_relation_when_create(skills_data, Topic)
             instance.skills.set(skills_set)
 
         return instance
