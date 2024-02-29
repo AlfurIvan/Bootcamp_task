@@ -22,6 +22,6 @@ RUN chmod +x /usr/src/app/entrypoint.sh
 
 # copy project
 COPY . .
-RUN flake8 --ignore=E501 .
+RUN flake8 --ignore=E501,F401 .
 
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]

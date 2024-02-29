@@ -1,21 +1,24 @@
+"""Module for testing the services.py module."""
+
 from django.test import TestCase
 
 from ..models import Profession, Skill, Topic
 from ..serializers import ProfessionSerializer
-from ..services import (nested_relation_when_create,
-                        nested_relation_when_update,
-                        update_serialize_save_instance,
+from ..services import (nested_relations_when_create,
+                        nested_relations_when_update,
+                        update_by_serializer,
                         _update_skill_or_topic_obj)
 
 
 class ServicesTestCase(TestCase):
+    """Tests for the services module."""
     def test_fill_relations_during_creation(self):
         nested_data = [
             {"name": "Skill1", "description": "Description1"},
             {"name": "Skill2", "description": "Description2"},
         ]
 
-        created_objects = nested_relation_when_create(nested_data, Skill)
+        created_objects = nested_relations_when_create(nested_data, Skill)
         created_objects.sort(key=lambda obj: obj.name)
 
         self.assertIsInstance(created_objects, list)
@@ -53,7 +56,7 @@ class ServicesTestCase(TestCase):
             }
         ]
 
-        returned_objs = nested_relation_when_update(nested_data, Topic)
+        returned_objs = nested_relations_when_update(nested_data, Topic)
         returned_objs.sort(key=lambda obj: obj.name)
         self.assertIsInstance(returned_objs, list)
 
@@ -79,7 +82,7 @@ class ServicesTestCase(TestCase):
             "skills": []
         }
 
-        updated_instance = update_serialize_save_instance(ProfessionSerializer, profession, data)
+        updated_instance = update_by_serializer(ProfessionSerializer, profession, data)
 
         self.assertEqual(updated_instance.data['name'], "Frontend Developer")
         self.assertEqual(updated_instance.data['description'],

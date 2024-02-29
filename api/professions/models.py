@@ -1,3 +1,4 @@
+"""Database models for Professions app."""
 import uuid
 
 from django.db import models

@@ -8,6 +8,7 @@ from ..serializers import ProfessionSerializer
 
 
 class ProfessionListCreateAPITest(APITestCase):
+    """Tests for ProfessionListCreateAPI"""
 
     def test_get_professions(self):
         profession1 = Profession.objects.create(name='Test Profession 1', description='Test Description 1')
@@ -41,6 +42,7 @@ class ProfessionListCreateAPITest(APITestCase):
 
 
 class SkillListCreateAPITest(APITestCase):
+    """Tests for SkillListCreateAPI"""
 
     @classmethod
     def setUpTestData(cls):
@@ -74,7 +76,7 @@ class SkillListCreateAPITest(APITestCase):
 
 
 class TopicListCreateAPITest(APITestCase):
-
+    """Test the TopicListCreateAPI"""
     def setUp(self):
         self.url = 'http://0.0.0.0:8000/topics/'
         self.topic_data = {
@@ -124,7 +126,7 @@ class TopicListCreateAPITest(APITestCase):
 
 
 class TopicRetrieveUpdateDestroyAPITest(APITestCase):
-
+    """Test retrieving, updating and deleting Topics"""
     @classmethod
     def setUpTestData(cls):
         cls.topic = Topic.objects.create(

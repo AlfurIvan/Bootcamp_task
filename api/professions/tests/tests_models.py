@@ -4,7 +4,7 @@ from ..models import Profession, Skill, Topic
 
 
 class ProfessionModelTest(TestCase):
-
+    """Test the Profession model"""
     @classmethod
     def setUp(cls):
         Skill.objects.create(name="Test Skill", description="Test Skill Description")
@@ -25,13 +25,13 @@ class ProfessionModelTest(TestCase):
         profession.skills.add(skill)
         self.assertIn(skill, profession.skills.all())
 
-    def test_skill_str(self):
+    def test_profession_str(self):
         profession = Profession.objects.get(description='Test Profession Description')
         self.assertEqual(str(profession), "Test Profession")
 
 
 class SkillModelTest(TestCase):
-
+    """Test the Skill model"""
     @classmethod
     def setUpTestData(cls):
         Skill.objects.create(name="Test Skill", description="Test Skill Description")
@@ -46,7 +46,7 @@ class SkillModelTest(TestCase):
 
 
 class TopicModelTest(TestCase):
-
+    """Test the Topic model"""
     @classmethod
     def setUpTestData(cls):
         skill = Skill.objects.create(name="Test Skill", description="Test Skill Description")
@@ -65,4 +65,3 @@ class TopicModelTest(TestCase):
     def test_topic_str(self):
         topic = Topic.objects.get(name="Test Topic")
         self.assertEqual(str(topic), "Test Topic")
-

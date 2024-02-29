@@ -1,3 +1,5 @@
+"""Admin wiev modification"""
+
 from django.contrib import admin
 from .models import Profession, Skill, Topic
 
@@ -15,5 +17,5 @@ class TopicAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Profession, ProfessionAdmin)
-admin.site.register(Skill)
-admin.site.register(Topic)
+admin.site.register(Skill, SkillAdmin)
+admin.site.register(Topic, ProfessionAdmin)
