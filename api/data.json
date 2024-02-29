@@ -1,0 +1,296 @@
+[
+  {
+    "model": "professions.profession",
+    "pk": "28f07eef-7ba7-4427-a21f-f4393933b12e",
+    "fields": {
+      "name": "Frontend Developer",
+      "description": "Builds user interfaces and implements designs for web applications.",
+      "average_salary": 80000,
+      "last_updated": "2024-02-28T21:20:02.043Z",
+      "skills": [
+        "4b88bb82-3c65-482b-982f-d6566f0a2dfa",
+        "1ef1086b-72ea-4953-b56a-02688d5948de",
+        "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949"
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": "a74e7de4-54da-4624-bc5a-58392ac8fda2",
+    "fields": {
+      "name": "Full Stack Developer",
+      "description": "Develops both frontend and backend components of web applications.",
+      "average_salary": 100000,
+      "last_updated": "2024-02-28T21:19:33.086Z",
+      "skills": [
+        "7705ceb4-1190-42f4-b0f8-d264536b297e",
+        "1ef1086b-72ea-4953-b56a-02688d5948de",
+        "4b88bb82-3c65-482b-982f-d6566f0a2dfa",
+        "0bcfec13-020f-4521-bc28-32b06fa661dc",
+        "1bf599a3-60e1-413d-9e35-f9af5996f97d",
+        "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949",
+        "1510bf86-086e-40cf-b5ef-d4b37e9f3f3a",
+        "81cc9cd8-7915-46c4-9c4d-a4187e8dc1ba"
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": "b6f45ceb-eb8e-45da-932b-1fd9c84764b8",
+    "fields": {
+      "name": "Data Scientist",
+      "description": "Analyzes and interprets complex data to inform decision-making processes.",
+      "average_salary": 85000,
+      "last_updated": "2024-02-28T21:19:01.943Z",
+      "skills": [
+        "1bf599a3-60e1-413d-9e35-f9af5996f97d",
+        "812d389c-4f5f-449e-8529-e5d76afdf7a8"
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": "ba406bca-abe7-4068-a14a-89a74ecd4ea4",
+    "fields": {
+      "name": "Python Backend Developer",
+      "description": "Creates web applications and software solutions using Python programming language.",
+      "average_salary": 95000,
+      "last_updated": "2024-02-28T21:18:31.444Z",
+      "skills": [
+        "1bf599a3-60e1-413d-9e35-f9af5996f97d",
+        "1510bf86-086e-40cf-b5ef-d4b37e9f3f3a",
+        "0bcfec13-020f-4521-bc28-32b06fa661dc"
+      ]
+    }
+  },
+  {
+    "model": "professions.profession",
+    "pk": "ee1f36ea-4e3b-431a-a47e-120bc6a9fb44",
+    "fields": {
+      "name": "JavaScript Developer",
+      "description": "Specializes in writing client-side and server-side JavaScript code.",
+      "average_salary": 90000,
+      "last_updated": "2024-02-28T21:16:20.900Z",
+      "skills": [
+        "4b88bb82-3c65-482b-982f-d6566f0a2dfa",
+        "1ef1086b-72ea-4953-b56a-02688d5948de",
+        "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949"
+      ]
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "0bcfec13-020f-4521-bc28-32b06fa661dc",
+    "fields": {
+      "name": "Django",
+      "description": "Python Framework for web applications"
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "1510bf86-086e-40cf-b5ef-d4b37e9f3f3a",
+    "fields": {
+      "name": "Django Rest Framework",
+      "description": "Python Framework  to create REST APIs"
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "1bf599a3-60e1-413d-9e35-f9af5996f97d",
+    "fields": {
+      "name": "Python",
+      "description": "A high-level programming language known for its simplicity and readability."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "1ef1086b-72ea-4953-b56a-02688d5948de",
+    "fields": {
+      "name": "Node.js",
+      "description": "An open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "4b88bb82-3c65-482b-982f-d6566f0a2dfa",
+    "fields": {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces, often used in web development."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "7705ceb4-1190-42f4-b0f8-d264536b297e",
+    "fields": {
+      "name": "UI/UX Design",
+      "description": "User Interface (UI) and User Experience (UX) design focuses on enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "812d389c-4f5f-449e-8529-e5d76afdf7a8",
+    "fields": {
+      "name": "Data Analysis",
+      "description": "The process of inspecting, cleansing, transforming, and modeling data to extract useful information."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "81cc9cd8-7915-46c4-9c4d-a4187e8dc1ba",
+    "fields": {
+      "name": "HTML",
+      "description": "Hypertext Markup Language, the standard markup language for creating web pages."
+    }
+  },
+  {
+    "model": "professions.skill",
+    "pk": "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949",
+    "fields": {
+      "name": "JavaScript",
+      "description": "A programming language commonly used to create interactive effects within web browsers."
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "30253c4d-751c-4baf-b40f-8b239a4ad5fa",
+    "fields": {
+      "name": "Programming Patterns",
+      "description": "Commonly used solutions to recurring problems in software design.",
+      "pet_project_ideas": "1. Implement the Observer pattern in a real-time chat application.\r\n2. Use the Factory Method pattern to create objects in a game development project.\r\n3. Apply the MVC (Model-View-Controller) pattern to organize code in a web application.",
+      "links": "https://refactoring.guru/design-patterns, https://sourcemaking.com/design_patterns, https://www.tutorialspoint.com/design_pattern/",
+      "skill": "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "4f1d2311-bb11-48d5-82a8-f25cbb61bbac",
+    "fields": {
+      "name": "JavaScript",
+      "description": "A programming language commonly used to create interactive effects within web browsers.",
+      "pet_project_ideas": "1. Develop a calculator application.\r\n2. Build a simple web-based game like Snake or Tetris.\r\n3. Create a task management application with drag-and-drop functionality.",
+      "links": "https://developer.mozilla.org/en-US/docs/Web/JavaScript, https://javascript.info/, https://www.codecademy.com/learn/introduction-to-javascript",
+      "skill": "a9c1bbc9-707e-4297-b7f8-cb39f0c7b949"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "5cdbd96d-fee1-472b-bdee-a350749a04c4",
+    "fields": {
+      "name": "Machine Learning",
+      "description": "A subset of artificial intelligence focused on the development of algorithms that enable computers to learn from and make predictions based on data.",
+      "pet_project_ideas": "1. Build a spam email classifier.\r\n2. Develop a recommendation system for movies or music.\r\n3. Create a handwritten digit recognizer using a dataset like MNIST.",
+      "links": "https://www.coursera.org/learn/machine-learning, https://www.udacity.com/course/machine-learning--ud262, https://www.kaggle.com/learn/machine-learning",
+      "skill": "812d389c-4f5f-449e-8529-e5d76afdf7a8"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "5da1cec9-5d15-4cc1-a348-2526c9f06dc5",
+    "fields": {
+      "name": "HTML",
+      "description": "Hypertext Markup Language, the standard markup language for creating web pages.",
+      "pet_project_ideas": "1. Design a personal portfolio website.\r\n2. Create a blog using HTML and CSS.\r\n3. Build a landing page for a product or service.",
+      "links": "https://www.w3.org/TR/html52/, https://www.codecademy.com/learn/learn-html, https://www.freecodecamp.org/learn/",
+      "skill": "81cc9cd8-7915-46c4-9c4d-a4187e8dc1ba"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "7b51ef0f-6131-46c1-befd-ff67180ba8e3",
+    "fields": {
+      "name": "Django",
+      "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "pet_project_ideas": "1. Build a blog application with user authentication and CRUD operations.\r\n2. Create a simple e-commerce platform with product listings and a shopping cart.\r\n3. Develop a social media application with features like user profiles, posts, and comments.",
+      "links": "https://www.djangoproject.com/, https://realpython.com/tutorials/django/, https://www.djangoproject.com/start/",
+      "skill": "0bcfec13-020f-4521-bc28-32b06fa661dc"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "867f1ec8-75f9-4ec8-a0ce-74cb466b1936",
+    "fields": {
+      "name": "Django Rest Framework (DRF)",
+      "description": "A powerful and flexible toolkit for building Web APIs using Django.",
+      "pet_project_ideas": "1. Develop a RESTful API for a todo list application with CRUD operations.\r\n2. Build a backend for a mobile app using DRF to handle user authentication and data retrieval.\r\n3. Create a web-based chat application with real-time messaging using DRF and websockets.",
+      "links": "https://www.django-rest-framework.org/, https://www.django-rest-framework.org/tutorial/quickstart/, https://www.django-rest-framework.org/api-guide/serializers/",
+      "skill": "1510bf86-086e-40cf-b5ef-d4b37e9f3f3a"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "a4e4944a-ff5a-4f38-aef1-2d4a968a7bf4",
+    "fields": {
+      "name": "Databases",
+      "description": "A structured set of data stored and organized for efficient retrieval.",
+      "pet_project_ideas": "1. Design and implement a relational database schema for a library management system.\r\n2. Create a database-driven web application for tracking personal expenses.\r\n3. Build a content management system (CMS) with features like user management, content creation, and commenting.",
+      "links": "https://www.postgresql.org/, https://www.mysql.com/, https://www.mongodb.com/",
+      "skill": "0bcfec13-020f-4521-bc28-32b06fa661dc"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "a51ee8da-38b8-4416-a9d8-76ed1fa7d3b0",
+    "fields": {
+      "name": "UI/UX Design",
+      "description": "User Interface (UI) and User Experience (UX) design focuses on enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product.",
+      "pet_project_ideas": "1. Redesign a popular website for better usability.\r\n2. Create a wireframe and prototype for a mobile app.\r\n3. Conduct user research and develop personas for a specific product.",
+      "links": "https://www.smashingmagazine.com/category/ui/, https://www.nngroup.com/, https://uxdesign.cc/",
+      "skill": "7705ceb4-1190-42f4-b0f8-d264536b297e"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "c2792a4b-5417-4702-b4bd-954b1a745587",
+    "fields": {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces, often used in web development.",
+      "pet_project_ideas": "1. Develop a todo list application with CRUD operations.\r\n2. Build a weather app that fetches data from an API.\r\n3. Create a movie search application using an external movie database API.",
+      "links": "https://reactjs.org/, https://www.taniarascia.com/getting-started-with-react/, https://www.freecodecamp.org/news/react-projects-for-beginners/",
+      "skill": "4b88bb82-3c65-482b-982f-d6566f0a2dfa"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "cb06def2-9ad5-4d24-95a2-8277833b941e",
+    "fields": {
+      "name": "Data Analysis",
+      "description": "The process of inspecting, cleansing, transforming, and modeling data to extract useful information.",
+      "pet_project_ideas": "1. Analyze a dataset to identify trends and patterns.\r\n2. Predict housing prices using regression analysis.\r\n3. Perform sentiment analysis on social media data.",
+      "links": "https://www.kaggle.com/datasets, https://towardsdatascience.com/, https://www.dataquest.io/blog/",
+      "skill": "812d389c-4f5f-449e-8529-e5d76afdf7a8"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "d20e3044-e0b0-4bef-bb8c-d1fa2b53c530",
+    "fields": {
+      "name": "Object-Oriented Programming (OOP)",
+      "description": "A programming paradigm based on the concept of 'objects', which can contain data and code.",
+      "pet_project_ideas": "1. Implement a class hierarchy for different shapes (e.g., circle, rectangle, triangle) with methods to calculate area and perimeter.\r\n2. Create a banking system with classes representing accounts, transactions, and customers.\r\n3. Develop a simple game using OOP principles, with classes for players, enemies, and game levels.",
+      "links": "https://realpython.com/python3-object-oriented-programming/, https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/, https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming",
+      "skill": "1bf599a3-60e1-413d-9e35-f9af5996f97d"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "e2f1621b-7d2d-484c-9a0d-55c213e84bba",
+    "fields": {
+      "name": "Python",
+      "description": "A high-level programming language known for its simplicity and readability.",
+      "pet_project_ideas": "1. Build a web scraper to extract data from websites.\r\n2. Create a chatbot using natural language processing.\r\n3. Develop a simple game like Tic-Tac-Toe.",
+      "links": "https://www.python.org/, https://realpython.com/, https://www.learnpython.org/",
+      "skill": "1bf599a3-60e1-413d-9e35-f9af5996f97d"
+    }
+  },
+  {
+    "model": "professions.topic",
+    "pk": "eea8c275-a2da-4b10-bc0f-f10be43d67a9",
+    "fields": {
+      "name": "Node.js",
+      "description": "An open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "pet_project_ideas": "1. Build a RESTful API for a todo list application.\r\n2. Create a real-time chat application using websockets.\r\n3. Develop a blogging platform with user authentication.",
+      "links": "https://nodejs.org/, https://www.freecodecamp.org/news/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2/, https://www.tutorialspoint.com/nodejs/",
+      "skill": "1ef1086b-72ea-4953-b56a-02688d5948de"
+    }
+  }
+]
