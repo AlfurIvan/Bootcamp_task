@@ -17,7 +17,7 @@ jobs:
       run: docker-compose up -d --build
 
     - name: Run tests
-      run: docker-compose exec api python manage.py test
+      run: docker-compose exec -T api python manage.py test
 
     - name: Drop all
       run: docker-compose down -v --remove-orphans
