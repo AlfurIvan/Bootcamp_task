@@ -84,10 +84,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
         'HOST': os.environ.get('HOST', 'localhost'),
         'PORT': os.environ.get('PORT', '5432'),
-    },
-    'test': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',
     }
 }
 
