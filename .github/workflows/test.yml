@@ -1,0 +1,23 @@
+name: Run tests on push
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run App
+      run: sudo docker-compose up -d --build
+
+    - name: Run tests
+      run: sudo docker-compose exec api python manage.py test
+
+    - name: Drop all
+      run: sudo docker-compose down -v --remove-orphans
